@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Meditative';
+    src: url('Meditative.eot');
+    src: url('Meditative.eot?#iefix') format('embedded-opentype'),
+        url('Meditative.woff2') format('woff2'),
+        url('Meditative.woff') format('woff'),
+        url('Meditative.ttf') format('truetype'),
+        url('Meditative.svg#Meditative') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
