@@ -1,0 +1,166 @@
+    * {
+        font-family: Nunito, sans-serif;
+    }
+
+    /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap'); */
+
+    /* :root {
+        --primary-color: #49243E;
+        --secondary-color: #DBAFA0;
+        --fadedBlack-color: #BB8493;
+        --white-color: #FFFFFF;
+        --primary-bg: #49243E;
+        --secondary-bg: #FFFAFE;
+        --font-size-14: 14px;
+        --font-size-16: 16px;
+        --font-size-18: 18px;
+        --font-size-20: 20px;
+        --font-size-24: 24px;
+    } */
+
+    .swiper-container {
+        width: 95%;
+        max-width: 1520px;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+    .swiper-container .swiper-slide-active {
+        opacity: 1 !important;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* background-color: rgb(255, 255, 255); */
+        display: flex;
+        /* -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center; */
+        /* align-items: center; */
+        opacity: 0.5;
+
+        margin-top: 50px;
+        padding-bottom: 0px;
+        padding-left: 5%;
+    }
+
+    .swiper-slide img {
+        display: block;
+
+    }
+
+    .responsive-container-block.content {
+        /* border: 1px solid var(--fadedBlack-color); */
+        padding: 25px;
+        border-radius: 50px 20px;
+        position: relative;
+        box-shadow: 0.5px 0.5px 5px var(--darkPink-color);
+    }
+
+
+
+    .textimonialQuotes {
+        position: absolute;
+        font-size: 100px;
+        right: 30px;
+        top: 15px;
+        color: #49243e
+    }
+
+
+
+
+    .swiper-pagination {
+        position: relative;
+        margin-top: 25px;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+        width: 20px;
+        height: 4px;
+        border-radius: 10px;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+
+        background-color: var(--primary-color);
+        opacity: 1;
+    }
+
+
+    /* NEW STYLE */
+
+    /* .testimonialProfile {
+        width: 100px;
+    } */
+
+    .testimonialQuotes {
+        font-size: 92px;
+        position: absolute;
+        right: 16px;
+        top: -46px;
+        color: var(--primary-color);
+    }
+
+    .testimonialName {
+        color: var(--primary-color);
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .testimonialUserDesign {
+        color: var(--secondary-color);
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .textimonialCont {
+        font-size: 15px;
+        text-align: justify;
+        color: var(--secondary-color);
+    }
+
+    .testimonialUserImg {
+        border: 2px solid var(--primary-color);
+        width: 80px;
+        border-radius: 50%;
+    }
+
+    .swiper-pagination-bullet {
+
+        border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+        background: var(--fadedBlack-color);
+        opacity: 0.6;
+    }
+
+    /* NEW STYLE */
+    /* @media (max-width: 1024px) {
+        .swiper-slide {
+            opacity: 0.5;
+        }
+    } */
+    /* 
+    @media (max-width: 768px) {
+        .swiper-slide {
+            opacity: 0.5;
+        }
+
+
+
+    } */
+
+    /* @media (max-width: 500px) { */
+    /* .swiper-slide {
+            opacity: 0.5;
+        } */
+
+
+
+
+
+
+    /* } */

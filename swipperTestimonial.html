@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+        integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            font-family: Nunito, sans-serif;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .wk-desk-1 {
+            width: 8.333333%;
+        }
+
+        .wk-desk-2 {
+            width: 16.666667%;
+        }
+
+        .wk-desk-3 {
+            width: 25%;
+        }
+
+        .wk-desk-4 {
+            width: 33.333333%;
+        }
+
+        .wk-desk-5 {
+            width: 41.666667%;
+        }
+
+        .wk-desk-6 {
+            width: 50%;
+        }
+
+        .wk-desk-7 {
+            width: 58.333333%;
+        }
+
+        .wk-desk-8 {
+            width: 66.666667%;
+        }
+
+        .wk-desk-9 {
+            width: 75%;
+        }
+
+        .wk-desk-10 {
+            width: 83.333333%;
+        }
+
+        .wk-desk-11 {
+            width: 91.666667%;
+        }
+
+        .wk-desk-12 {
+            width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            .wk-ipadp-1 {
+                width: 8.333333%;
+            }
+
+            .wk-ipadp-2 {
+                width: 16.666667%;
+            }
+
+            .wk-ipadp-3 {
+                width: 25%;
+            }
+
+            .wk-ipadp-4 {
+                width: 33.333333%;
+            }
+
+            .wk-ipadp-5 {
+                width: 41.666667%;
+            }
+
+            .wk-ipadp-6 {
+                width: 50%;
+            }
+
+            .wk-ipadp-7 {
+                width: 58.333333%;
+            }
+
+            .wk-ipadp-8 {
+                width: 66.666667%;
+            }
+
+            .wk-ipadp-9 {
+                width: 75%;
+            }
+
+            .wk-ipadp-10 {
+                width: 83.333333%;
+            }
+
+            .wk-ipadp-11 {
+                width: 91.666667%;
+            }
+
+            .wk-ipadp-12 {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .wk-tab-1 {
+                width: 8.333333%;
+            }
+
+            .wk-tab-2 {
+                width: 16.666667%;
+            }
+
+            .wk-tab-3 {
+                width: 25%;
+            }
+
+            .wk-tab-4 {
+                width: 33.333333%;
+            }
+
+            .wk-tab-5 {
+                width: 41.666667%;
+            }
+
+            .wk-tab-6 {
+                width: 50%;
+            }
+
+            .wk-tab-7 {
+                width: 58.333333%;
+            }
+
+            .wk-tab-8 {
+                width: 66.666667%;
+            }
+
+            .wk-tab-9 {
+                width: 75%;
+            }
+
+            .wk-tab-10 {
+                width: 83.333333%;
+            }
+
+            .wk-tab-11 {
+                width: 91.666667%;
+            }
+
+            .wk-tab-12 {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .wk-mobile-1 {
+                width: 8.333333%;
+            }
+
+            .wk-mobile-2 {
+                width: 16.666667%;
+            }
+
+            .wk-mobile-3 {
+                width: 25%;
+            }
+
+            .wk-mobile-4 {
+                width: 33.333333%;
+            }
+
+            .wk-mobile-5 {
+                width: 41.666667%;
+            }
+
+            .wk-mobile-6 {
+                width: 50%;
+            }
+
+            .wk-mobile-7 {
+                width: 58.333333%;
+            }
+
+            .wk-mobile-8 {
+                width: 66.666667%;
+            }
+
+            .wk-mobile-9 {
+                width: 75%;
+            }
+
+            .wk-mobile-10 {
+                width: 83.333333%;
+            }
+
+            .wk-mobile-11 {
+                width: 91.666667%;
+            }
+
+            .wk-mobile-12 {
+                width: 100%;
+            }
+        }
+
+        .text-blk {
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            line-height: 25px;
+        }
+
+        .responsive-container-block {
+            min-height: 75px;
+            height: fit-content;
+            width: 100%;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+            justify-content: flex-start;
+        }
+
+        .responsive-container-block.bg {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            max-width: 1500px;
+        }
+
+        .text-blk.title {
+            font-size: 36px;
+            line-height: 42px;
+            font-weight: 700;
+            color: rgb(244, 152, 146);
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            margin-top: 40px;
+            margin-right: 0px;
+            margin-bottom: 12px;
+            margin-left: 0px;
+        }
+
+        .container-block {
+            min-height: 75px;
+            height: fit-content;
+            width: 100%;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            display: block;
+        }
+
+        .swiper-container {
+            width: 85%;
+            max-width: 1520px;
+            height: auto;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .swiper-container .swiper-slide-active {
+            opacity: 1 !important;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background-image: initial;
+            background-position-x: initial;
+            background-position-y: initial;
+            background-size: initial;
+            background-repeat: initial;
+            background-repeat: initial;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            opacity: 0.5;
+            margin-top: 50px;
+            margin-right: 10px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 40px;
+        }
+
+
+        .quotes {
+            color: rgb(153, 153, 153);
+        }
+
+        .swiper-slide img {
+            display: block;
+            object-fit: cover;
+        }
+
+        .responsive-container-block.content {
+            flex-direction: column;
+            align-items: flex-start;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+            position: relative;
+            margin-top: 40px;
+            margin-right: 20px;
+            margin-bottom: 50px;
+            margin-left: 20px;
+            border-top-left-radius: 35px;
+            border-top-right-radius: 35px;
+            border-bottom-right-radius: 35px;
+            border-bottom-left-radius: 35px;
+            border-top-width: 2px;
+            border-right-width: 2px;
+            border-bottom-width: 2px;
+            border-left-width: 2px;
+            border-top-style: solid;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-top-color: rgb(244, 152, 146);
+            border-right-color: rgb(244, 152, 146);
+            border-bottom-color: rgb(244, 152, 146);
+            border-left-color: rgb(244, 152, 146);
+            border-image-source: initial;
+            border-image-slice: initial;
+            border-image-width: initial;
+            border-image-outset: initial;
+            border-image-repeat: initial;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 80px;
+        }
+
+        .text-blk.name {
+            font-size: 20px;
+            line-height: 27.28px;
+            font-weight: 900;
+            color: rgb(102, 102, 102);
+            text-align: left;
+            padding-top: 0px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+            margin-top: 80px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        .text-blk.desig {
+            font-size: 16px;
+            line-height: 21.82px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            text-align: left;
+            color: rgb(102, 102, 102);
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+        }
+
+        .text-blk.info {
+            font-size: 19px;
+            line-height: 30px;
+            text-align: left;
+            color: rgb(153, 153, 153);
+            margin-top: 10px;
+            margin-right: 0px;
+            margin-bottom: 25px;
+            margin-left: 0px;
+        }
+
+        .text-blk.quotes {
+            position: absolute;
+            /* left: auto; */
+            font-size: 130px;
+            line-height: 370px;
+            top: -164px;
+            font-weight: 900;
+            color: rgb(153, 153, 153);
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            right: 13px;
+        }
+
+        .container-block.swiper-button-prevs {
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-block.swiper-button-nexts {
+            width: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .responsive-container-block.person {
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 30px;
+            margin-left: 0px;
+        }
+
+        .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12.info {
+            min-height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 15px;
+        }
+
+        .quotes {
+            color: rgb(241, 59, 103);
+        }
+
+        .text-blk.heading {
+            font-size: 20px;
+            line-height: 34.1px;
+            text-align: center;
+            color: rgb(51, 51, 51);
+            font-weight: 700;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 8px;
+            margin-left: 0px;
+            padding-top: 0px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+        }
+
+        .text-blk.desc {
+            max-width: 850px;
+            font-size: 18px;
+            line-height: 28.1px;
+            color: rgb(153, 153, 153);
+            text-align: center;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 80px;
+            margin-left: 0px;
+            padding-top: 0px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+        }
+
+        #ibvmy {
+            color: black;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 60px;
+            left: -50px;
+            z-index: 2;
+        }
+
+        .profile-image {
+            color: black;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 60px;
+            left: -50px;
+            z-index: 2;
+        }
+
+        .title {
+            color: rgb(244, 152, 146);
+        }
+
+        .swiper-pagination {
+            position: relative;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet {
+            width: 28px;
+            height: 4px;
+            opacity: 0.1;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-image: initial;
+            background-position-x: initial;
+            background-position-y: initial;
+            background-size: initial;
+            background-position-x: initial;
+            background-repeat: initial;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: rgb(244, 152, 146);
+            opacity: 1;
+        }
+
+        @media (max-width: 1024px) {
+            .swiper-slide {
+                opacity: 0.5;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .swiper-slide {
+                opacity: 0.5;
+            }
+
+            .swiper-container {
+                min-width: 95%;
+            }
+
+            .swiper-slide {
+                min-width: 100%;
+            }
+
+            .swiper-wrapper {
+                min-width: 100%;
+            }
+
+            .text-blk.heading {
+                font-size: 18px;
+            }
+
+            .text-blk.title {
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            .text-blk.desc {
+                font-size: 17px;
+                line-height: 25.1px;
+                max-width: 600px;
+            }
+
+            .text-blk.info {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            .text-blk.name {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .swiper-slide {
+                opacity: 0.5;
+            }
+
+            .responsive-container-block.content {
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                width: 100%;
+                margin-top: 40px;
+                margin-right: 0px;
+                margin-bottom: 50px;
+                margin-left: 0px;
+            }
+
+            .swiper-container {
+                min-width: 90%;
+            }
+
+            .swiper-slide {
+                min-width: 100%;
+            }
+
+            .swiper-wrapper {
+                min-width: 100%;
+            }
+
+            .profile-image {
+                width: 75px;
+                height: 75px;
+                left: -40px;
+            }
+
+            .responsive-container-block.content {
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 35px;
+            }
+
+            .text-blk.info {
+                margin-top: 10px;
+                margin-right: 0px;
+                margin-bottom: 25px;
+                margin-left: -25px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .text-blk.name {
+                margin-top: 80px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+                margin-left: 10px;
+            }
+
+            .text-blk.desig {
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+                margin-left: 10px;
+            }
+
+            .text-blk.desc {
+                font-size: 16px;
+                line-height: 24px;
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-bottom: 60px;
+                margin-left: 0px;
+            }
+
+            .text-blk.heading {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            .text-blk.title {
+                font-size: 26px;
+                line-height: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="responsive-container-block bg">
+      
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="responsive-container-block content">
+                        <p class="text-blk quotes">
+                            “
+                        </p>
+                        <p class="text-blk name">
+                            Jane Doe
+                        </p>
+                        <img class="image-block profile-image"
+                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/P1.7.png">
+                        <p class="text-blk desig">
+                            CEO
+                        </p>
+                        <p class="text-blk info">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis
+                            pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar
+                            tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.”
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="responsive-container-block content">
+                        <p class="text-blk quotes">
+                            “
+                        </p>
+                        <p class="text-blk name">
+                            Jane Doe
+                        </p>
+                        <img class="image-block profile-image"
+                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/P1.7.png">
+                        <p class="text-blk desig">
+                            CEO
+                        </p>
+                        <p class="text-blk info">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis
+                            pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar
+                            tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.”
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="responsive-container-block content">
+                        <p class="text-blk quotes">
+                            “
+                        </p>
+                        <p class="text-blk name">
+                            Jane Doe
+                        </p>
+                        <img class="image-block profile-image"
+                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/P1.7.png">
+                        <p class="text-blk desig">
+                            CEO
+                        </p>
+                        <p class="text-blk info">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis
+                            pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar
+                            tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.”
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="responsive-container-block content">
+                        <p class="text-blk name">
+                            Jane Doe
+                        </p>
+                        <p class="text-blk quotes">
+                            “
+                        </p>
+                        <img class="image-block profile-image"
+                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/P1.7.png">
+                        <p class="text-blk desig">
+                            CEO
+                        </p>
+                        <p class="text-blk info">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis
+                            pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar
+                            tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.”
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="responsive-container-block content">
+                        <p class="text-blk name">
+                            Jane Doe
+                        </p>
+                        <p class="text-blk quotes">
+                            “
+                        </p>
+                        <img class="image-block profile-image"
+                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/P1.7.png">
+                        <p class="text-blk desig">
+                            CEO
+                        </p>
+                        <p class="text-blk info">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis
+                            pulvinar tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Cursus elementum magna ut duis pulvinar
+                            tincidunt vivamus adipiscing quam. Eget dui quis etiam sed eget sed est.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination container-block">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(`.mySwiper`, {
+            slidesPerView: 3,
+            spaceBetween: 5,
+            pagination: {
+                el: `.swiper-pagination`,
+                clickable: true,
+            },
+            breakpoints: {
+
+                300: {
+                    slidesPerView: 1
+                },
+
+                501: {
+                    slidesPerView: 1
+                },
+
+                769: {
+                    slidesPerView: 1.20,
+                    spaceBetween: 10
+                },
+                1025: {
+                    slidesPerView: 1.15,
+                    spaceBetween: 10
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>
